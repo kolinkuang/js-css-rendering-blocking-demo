@@ -1,0 +1,15 @@
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const p = document.querySelector('p')
+            console.log(p)
+        })
+    </script>
+    <!-- 验证 CSS 会阻塞 JS 的执行 -->
+    <link rel="stylesheet" href="./static/style.css?sleep=3000">
+    <script src="./static/index.js"></script>
+</head>
+
+<body>
+<p>hello world</p>
+</body>

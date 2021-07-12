@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 验证 CSS 不会阻塞 DOM 的解析
+            const p = document.querySelector('p')
+            console.log(p)
+        })
+    </script>
+    <!-- 验证 CSS 会阻塞页面渲染 -->
+    <link rel="stylesheet" href="./static/style.css?sleep=3000">
+</head>
+
+<body>
+<p>hello world</p>
+</body>
+
+</html>

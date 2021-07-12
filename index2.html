@@ -1,0 +1,21 @@
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const p = document.querySelector('p')
+            console.log(p)
+        })
+    </script>
+</head>
+
+<body>
+<script>
+    const p = document.querySelector('p')
+    console.log(p)
+
+    // 验证 JS 会阻塞 DOM 解析
+    for (let i = 0, arr = []; i < 100000000; i++) {
+        arr.push(i)
+    }
+</script>
+<p>hello world</p>
+</body>
